@@ -1,0 +1,48 @@
+[
+    {
+        "order_id": "O101",
+        "customer_id" : "C001",
+        "order_line_items" : [
+            {
+                "item_id" : "I001",
+                "qty" : 6,
+                "amount": 102.45
+            },
+            {
+                "item_id" : "I003",
+                "qty" : 2,
+                "amount": 2.01
+            }
+        ],
+        "contact" : [9000010000, 9000010001]
+    },
+    {
+        "order_id": "O102",
+        "customer_id" : "C002",
+        "order_line_items" : [
+            {
+                "item_id" : "I002",
+                "qty" : 1,
+                "amount": 25.50
+            }
+        ],
+        "contact" : [9000010002, 9000010003]
+    },
+    {
+        "order_id": "O103",
+        "customer_id" : "C001",
+        "order_line_items" : [
+            {
+                "item_id" : "I001",
+                "qty" : 3,
+                "amount": 51.20
+            },
+            {
+                "item_id" : "I004",
+                "qty" : 9,
+                "amount": 340.00
+            }
+        ],
+        "contact" : [9000010004]
+    }
+]
