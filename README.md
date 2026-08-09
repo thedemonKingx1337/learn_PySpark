@@ -20,7 +20,8 @@ A hands-on collection of Jupyter notebooks for learning Apache Spark with Python
 | Resource | Description |
 |----------|-------------|
 | [docker-images/](docker-images/) | Docker Compose setup for a full Spark cluster (1 master, 2 workers, Jupyter Lab, and a history server) — see its [README](docker-images/README.md) for step-by-step instructions. |
-| [csv_samples/](csv_samples/) | Sample CSV files read by the chapters — `emp.csv` (the clean employee dataset) and `emp_new.csv` (same data with deliberately broken rows: a non-numeric salary, a wrong-format date and an empty date, used for the corrupt-record lesson in Chapter 8). Mounted into the Jupyter container at `/home/jupyter/csv_samples`. |
+| [data/csv/](data/csv/) | CSV sample files — `emp.csv` (the clean employee dataset) and `emp_new.csv` (same data with deliberately broken rows: a non-numeric salary, a wrong-format date and an empty date, used for the corrupt-record lesson in Chapter 8). |
+| [data/parquet/](data/parquet/) | Parquet sample files — `sales_data.parquet` (200 sales transactions: `transacted_at`, `trx_id`, `retailer_id`, `description`, `amount`, `city_id`) used for the columnar-format lesson in Chapter 9. Note that Spark writes parquet as a *directory* of part files, not a single file. |
 | [jup_Note_url.txt](jup_Note_url.txt) | Quick-reference note with the local Jupyter Lab and Spark UI URLs, plus the `docker exec … jupyter server list` command for fetching the current Jupyter token after a container restart. |
 
 ## ▶️ How to Use
