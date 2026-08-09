@@ -1,1 +1,4 @@
 jup_Note_url.txt
+# Spark write artifacts
+*.crc
+_SUCCESS
