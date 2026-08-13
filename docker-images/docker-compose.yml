@@ -12,6 +12,9 @@ services:
     volumes:
         - spark_data:/data:rw
         - ../data:/home/jupyter/data:rw
+        # whole chapter folder: notebooks + the .py scripts used with spark-submit,
+        # so they can be edited on Windows and submitted from inside the container
+        - ../:/home/jupyter/chapter1:rw
   bd-spark-master:
     image: bde2020/spark-master:3.3.0-hadoop3.3
     #command: ln -s /usr/bin/python3 /usr/local/bin/python
