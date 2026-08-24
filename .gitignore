@@ -2,3 +2,5 @@ jup_Note_url.txt
 # Spark write artifacts
 *.crc
 _SUCCESS
+
+data/csv/new_sales.csv
