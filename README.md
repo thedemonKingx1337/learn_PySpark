@@ -21,6 +21,7 @@ A hands-on collection of Jupyter notebooks for learning Apache Spark with Python
 | 13 | [Chapter 13 — Spark UI Jobs, Stages, and Tasks](chapter13.ipynb) | Explaining Spark UI Jobs, Stages, and Tasks; reading the execution plan and understanding why stages are skipped, while disabling AQE and Broadcast joins to see raw execution. |
 | 14 | [Chapter 14 — PySpark Pipelining & Shuffling](chapter14.ipynb) | Deep dive into PySpark pipelining, shuffling, partitions, and tasks. Adjusting `spark.sql.shuffle.partitions` to see its effect on `groupBy` aggregations. |
 | 15 | [Chapter 15 — Caching and Storage Levels](chapter15.ipynb) | PySpark Caching and Storage Levels: `.cache()` vs `.persist()`, Serialization vs. Deserialization, avoiding Memory & GC issues, and understanding `MEMORY_ONLY`, `MEMORY_AND_DISK`, and `_SER` / `_2` variants. |
+| 16 | [Chapter 16 — Distributed Shared Variables: Broadcast](chapter16.ipynb) | Distributed shared variables in PySpark, focusing on **broadcast variables**: why a plain join invokes a shuffle, why passing a lookup dict through a UDF closure serializes it once per task (creating redundant network traffic), and how `sparkContext.broadcast()` sends the data **once to each worker node** via a peer-to-peer protocol so every executor reads a local copy — demonstrated with a department-name lookup UDF (`@udf` + `broadcast_department_names.value.get()`). Also mentions **accumulators** as the other kind of distributed shared variable (not yet covered in code). |
 
 ## 🛠️ Setup & Extras
 
