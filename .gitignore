@@ -1,6 +1,18 @@
 jup_Note_url.txt
-# Spark write artifacts
+
+# Python & Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Spark write artifacts & metastore
 *.crc
 _SUCCESS
+spark-warehouse/
+metastore_db/
+derby.log
 
-data/csv/new_sales.csv
+# Datasets and generated output folders
+data/

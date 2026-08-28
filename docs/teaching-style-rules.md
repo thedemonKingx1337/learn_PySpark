@@ -22,8 +22,10 @@ Follow this order every time:
 
 - **Never use jargon without defining it first.** The first time a technical term appears, it must come with a plain-English explanation. After that, use the term freely.
 - **Use concrete examples over abstract descriptions.** "If you have 200 partitions, Spark creates 200 separate tasks" is better than "Spark creates a task per partition."
+- **Always name the actual thing — never use vague stand-ins.** When referring to a table, dataset, or variable used in the chapter, say its name: "Spark builds a hash table from City (the smaller table) and matches each Sales row against it." Never write "the smaller side" or "the larger side" without saying *what* that side is. The reader should never have to scroll up to figure out what you mean.
 - **Use analogies when they genuinely help.** A good analogy sticks; a forced one confuses. Drop it if it takes more words to explain the analogy than the concept.
 - **Don't dumb it down — build it up.** The goal is not to hide complexity but to reveal it layer by layer. By the end of the note, the student should understand the *real* mechanism, not a watered-down version.
+- **If something in a diagram looks confusing, explain it — don't silently change it.** When a diagram shows something that could raise a question (e.g. an empty column that still says "match"), address the confusion head-on: "Why does this row show a match when the City column is empty? Because…" Never hide the confusion by filling in values or removing the surprising part. The surprise *is* the teaching moment — the reader learns the most when you answer the question they were about to ask.
 
 ## What "Advanced Level" Means
 
