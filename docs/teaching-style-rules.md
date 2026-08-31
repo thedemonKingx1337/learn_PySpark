@@ -26,6 +26,8 @@ Follow this order every time:
 - **Use analogies when they genuinely help.** A good analogy sticks; a forced one confuses. Drop it if it takes more words to explain the analogy than the concept.
 - **Don't dumb it down — build it up.** The goal is not to hide complexity but to reveal it layer by layer. By the end of the note, the student should understand the *real* mechanism, not a watered-down version.
 - **If something in a diagram looks confusing, explain it — don't silently change it.** When a diagram shows something that could raise a question (e.g. an empty column that still says "match"), address the confusion head-on: "Why does this row show a match when the City column is empty? Because…" Never hide the confusion by filling in values or removing the surprising part. The surprise *is* the teaching moment — the reader learns the most when you answer the question they were about to ask.
+- **For data transformations & optimizations, ALWAYS show 3 phases (Before → Transformation → After):** Never jump straight to the solution. Always draw the raw un-transformed data first (e.g. raw rows `1, 1, 1, 2, 3, 3, 3, 3, 3`), explicitly highlight the problem (e.g. the clump of `3`s), show the transformation mechanism (e.g. adding salt suffixes `0, 1` and exploding the dimension table), and then show the balanced cluster partitions after the join.
+- **Use question-driven, intuitive headings:** When introducing a solution, lead with the student's natural intuition or objection as the heading (e.g. *"So repartitioning is the solution, but even if we repartition, `department_id` is the same right? So they will come back to the same task. → SO TO FIX WE CAN USE SALTING!"*), rather than cold, abstract textbook titles.
 
 ## What "Advanced Level" Means
 

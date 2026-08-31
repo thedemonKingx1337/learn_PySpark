@@ -48,6 +48,7 @@ reader must be able to see the figure without scrolling while reading about it.
   same subject get two *different* figures — a numbered *sequence* ("what happens, in order") and a
   structural *map* ("which box lives on which machine") — with a one-line cross-reference each way.
   Never duplicate the same figure twice.
+- **For transformations and optimization techniques, always draw a 3-part diagram:** Step 1 (Before — raw data & the problem/skew), Step 2 (Transformation — how the keys/tables are altered), and Step 3 (After — cluster partitions executing in parallel).
 - **Lead the explanation by pointing at the picture** — "Now the same seven numbers, in words:",
   "What the picture is saying, line by line:" — so it is clearly a walkthrough, not a fresh start.
 
