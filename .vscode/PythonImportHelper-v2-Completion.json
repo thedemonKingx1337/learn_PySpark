@@ -16,5 +16,31 @@
         "description": "sys",
         "detail": "sys",
         "documentation": {}
+    },
+    {
+        "label": "SparkSession",
+        "importPath": "pyspark.sql",
+        "description": "pyspark.sql",
+        "isExtraImport": true,
+        "detail": "pyspark.sql",
+        "documentation": {}
+    },
+    {
+        "label": "spark",
+        "kind": 5,
+        "importPath": "chaper11_understandCluster",
+        "description": "chaper11_understandCluster",
+        "peekOfCode": "spark = SparkSession.builder.appName(\"Cluster Execution\").getOrCreate()\ndf = spark.range(10)\ndf.write.format(\"csv\").option(\"header\", True).save(\"/data/output/15/1/range.csv\")",
+        "detail": "chaper11_understandCluster",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "chaper11_understandCluster",
+        "description": "chaper11_understandCluster",
+        "peekOfCode": "df = spark.range(10)\ndf.write.format(\"csv\").option(\"header\", True).save(\"/data/output/15/1/range.csv\")",
+        "detail": "chaper11_understandCluster",
+        "documentation": {}
     }
 ]

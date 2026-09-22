@@ -1,5 +1,5 @@
 Jupiter Note:
-http://localhost:8888/?token=xxxxxxxxxxxxxxxx
+http://localhost:8888/?token=9f198e3ed556ce7402e61bd8a49ad018109fc796661d4d11
 
 Spark:
 http://localhost:4040/jobs/
